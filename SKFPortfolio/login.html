@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #ffecec;
+    }
+    .login-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"],
+.login-container input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    align-self: center;
+}
+
+.login-container input[type="submit"] {
+    background-color: #D5B4B4;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.login-container input[type="submit"]:hover {
+    background-color: #867070;
+}
+
+</style>
+</head>
+<body>
+
+<div class="login-container">
+    <lord-icon
+        src="https://cdn.lordicon.com/pyarizrk.json"
+        trigger="loop"
+        delay="1000"
+        stroke="light"
+        colors="primary:#121331,secondary:#faddd1,tertiary:#fad3d1,quaternary:#4d2c19"
+        style="width:150px;height:150px">
+    </lord-icon>
+    <h2>Login</h2>
+    <form action="#" method="post">
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <input type="submit" value="Login">
+    </form>
+</div>
+<script src="https://cdn.lordicon.com/lordicon.js"></script>
+
+</body>
+</html>
