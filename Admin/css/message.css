@@ -1,0 +1,75 @@
+.card-body {
+    display: flex;
+    flex-direction: column;
+    height: 460px;
+    overflow-y: auto;
+  }
+
+.container {
+    height: 620px;
+    position: relative;
+}
+
+.inbox-container {
+    height: 70%;
+    width: 280px;
+    overflow-y: auto;
+}
+
+.inbox-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.inbox-item {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-bottom: 1px solid #ddd;
+}
+
+.inbox-item:hover {
+    background-color: #f0f0f0;
+}
+
+
+.input-box {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    
+}
+
+.sendMessagebtn {
+    background-color: rgb(127, 201, 165);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.sendMessagebtn:hover {
+    background-color: #449028;
+}
+
+.message-left,
+.message-right {
+  max-width: 50%; 
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.message-left {
+  align-self: flex-start;
+  background-color: #e0e0e0; 
+}
+
+.message-right {
+  align-self: flex-end;
+  background-color: rgb(127, 201, 165); 
+  color: #fff;
+}
+
